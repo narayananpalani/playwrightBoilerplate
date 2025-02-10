@@ -8,6 +8,7 @@ import bankmanager from '../pages/bankmanager.page'
 import base from '../actions/base.action'
 import { config } from '../../config/test.config'
 import user from '../fixtures/test_data.json'
+import AxeBuilder from '@axe-core/playwright';
 const basePage = new base(global.page)
 
 //    Given user navigate to login page
@@ -59,4 +60,27 @@ When('error message display during duplicate customer creation', async function 
   }
   )
 })
+
+When('visual comparison check user interface changes successfully', async function () {
+  await global.page.screenshot({ 
+    path: './test-results/snapshots/createCustomer.png',
+     }
+    );
+  expect(global.page.screenshot()).toMatchSnapshot();
+   }
+  )
+
+
+  When('accessibility check of user interface successfully', async function ({page}) {
+  
+    const accessibilityScanResults = await new AxeBuilder({ page }).analyze();
+
+    expect(accessibilityScanResults.violations).toEqual([]);   
+  
+  }
+    )
+  
+
+
+
 

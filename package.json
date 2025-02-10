@@ -7,7 +7,9 @@
     "test": "cucumber-js test && ts-node src/utils/reporter.ts",
     "customertest": "cucumber-js test --tags @customer && ts-node src/utils/reporter.ts",
     "deposittest": "cucumber-js test --tags @deposit && ts-node src/utils/reporter.ts",
-    "openaccounttest": "cucumber-js test --tags @openaccount && ts-node src/utils/reporter.ts"
+    "openaccounttest": "cucumber-js test --tags @openaccount && ts-node src/utils/reporter.ts",
+    "visualtest": "cucumber-js test --tags @visualtest && ts-node src/utils/reporter.ts",
+    "accessibilitytest": "cucumber-js test --tags @accessibilitytest && ts-node src/utils/reporter.ts"
   },
   "keywords": [
     "playwright",

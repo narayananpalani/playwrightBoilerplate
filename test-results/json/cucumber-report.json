@@ -4,182 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "create-a-new-customer-at-xyz-bank;create-a-customer",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "Create a customer",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1137659208
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 14,
-            "name": "user navigate to login page",
-            "match": {
-              "location": "src/test/steps/make.deposit.step.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1458086790
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "user create a customer",
-            "match": {
-              "location": "src/test/steps/create.customer.step.ts:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2252216540
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "customer added successfully",
-            "match": {
-              "location": "src/test/steps/create.customer.step.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 904442085
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 92975103
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@customer",
-            "line": 12
-          },
-          {
-            "name": "@test",
-            "line": 12
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "create-a-new-customer-at-xyz-bank;create-a-duplicate-customer-to-check-error-message",
-        "keyword": "Scenario",
-        "line": 19,
-        "name": "Create a duplicate customer to check error message",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 410967292
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "user navigate to login page",
-            "match": {
-              "location": "src/test/steps/make.deposit.step.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 835500765
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 21,
-            "name": "user duplicate a customer in create customer section",
-            "match": {
-              "location": "src/test/steps/create.customer.step.ts:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2917896697
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "error message display during duplicate customer creation",
-            "match": {
-              "location": "src/test/steps/create.customer.step.ts:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1689430
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 67965347
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@customer",
-            "line": 18
-          },
-          {
-            "name": "@test",
-            "line": 18
-          },
-          {
-            "name": "@negativetest",
-            "line": 18
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "create-a-new-customer-at-xyz-bank",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Create a new customer at XYZ Bank",
-    "tags": [],
-    "uri": "src/test/features/create.customer.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "make-deposit-to-customer-at-xyz-bank;make-a-deposit",
+        "id": "create-a-new-customer-at-xyz-bank;verify-screen-of-customer-creation",
         "keyword": "Scenario",
         "line": 7,
-        "name": "Make a deposit",
+        "name": "Verify screen of customer creation",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 366183296
+              "duration": 1131598229
             }
           },
           {
@@ -192,454 +27,144 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1040391438
+              "duration": 1162021552
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 9,
-            "name": "user make a deposit",
+            "name": "user create a customer",
             "match": {
-              "location": "src/test/steps/make.deposit.step.ts:15"
+              "location": "src/test/steps/create.customer.step.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 2915477670
+              "duration": 1727377448
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "transaction updated successfully",
+            "name": "visual comparison check user interface changes successfully",
             "match": {
-              "location": "src/test/steps/make.deposit.step.ts:53"
+              "location": "src/test/steps/create.customer.step.ts:64"
             },
             "result": {
               "status": "failed",
-              "duration": 5002692270,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"
+              "duration": 161545483,
+              "error_message": "Error: toMatchSnapshot() must be called during the test\n    at Object.toMatchSnapshot (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/node_modules/playwright/lib/matchers/toMatchSnapshot.js:228:24)\n    at /Users/narayananp24/Documents/repositories/playwrightBoilerplate/node_modules/playwright/lib/common/expectBundleImpl.js:338:953\n    at Object.i [as toMatchSnapshot] (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/node_modules/playwright/lib/common/expectBundleImpl.js:338:968)\n    at Proxy.<anonymous> (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/node_modules/playwright/lib/matchers/expect.js:173:37)\n    at World.<anonymous> (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/src/test/steps/create.customer.step.ts:69:36)\n    at fulfilled (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/src/test/steps/create.customer.step.ts:5:58)"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 54198047
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@deposit",
-            "line": 6
-          },
-          {
-            "name": "@test",
-            "line": 6
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "make-deposit-to-customer-at-xyz-bank;make-a-deposit-to-check-transaction-with-10-seconds-delay",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "Make a deposit to check transaction with 10 seconds delay",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 373659200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 14,
-            "name": "user navigate to login page",
-            "match": {
-              "location": "src/test/steps/make.deposit.step.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1020558668
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "user make a deposit",
-            "match": {
-              "location": "src/test/steps/make.deposit.step.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3540935967
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "check transaction in few seconds delay that to get updated successfully",
-            "match": {
-              "location": "src/test/steps/make.deposit.step.ts:58"
-            },
             "result": {
               "status": "failed",
-              "duration": 5002710952,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 52234818
+              "duration": 54037334,
+              "error_message": "page.screenshot: Target closed\n=========================== logs ===========================\ntaking page screenshot\n============================================================\n    at World.<anonymous> (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/src/test/steps/create.customer.step.ts:69:22)\n    at fulfilled (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/src/test/steps/create.customer.step.ts:5:58)"
             }
           }
         ],
         "tags": [
           {
-            "name": "@deposit",
-            "line": 12
-          },
-          {
-            "name": "@test",
-            "line": 12
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "make-deposit-to-customer-at-xyz-bank;submit-an-empty-deposit",
-        "keyword": "Scenario",
-        "line": 20,
-        "name": "Submit an empty deposit",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 383932786
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 21,
-            "name": "user navigate to login page",
-            "match": {
-              "location": "src/test/steps/make.deposit.step.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1015187533
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 22,
-            "name": "user make an empty deposit",
-            "match": {
-              "location": "src/test/steps/make.deposit.step.ts:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3400013218
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 23,
-            "name": "error message displayed on deposit text field",
-            "match": {
-              "location": "src/test/steps/make.deposit.step.ts:46"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5531101
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 63092892
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@deposit",
-            "line": 19
-          },
-          {
-            "name": "@test",
-            "line": 19
-          },
-          {
-            "name": "@negativetest",
-            "line": 19
+            "name": "@visualtest",
+            "line": 6
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "make-deposit-to-customer-at-xyz-bank",
+    "id": "create-a-new-customer-at-xyz-bank",
     "line": 1,
     "keyword": "Feature",
-    "name": "Make deposit to customer at XYZ Bank",
+    "name": "Create a new customer at XYZ Bank",
     "tags": [],
-    "uri": "src/test/features/make.deposit.feature"
+    "uri": "src/test/features/visual.accessibility.feature"
   },
   {
     "description": "",
     "elements": [
       {
         "description": "",
-        "id": "open-an-account-at-xyz-bank;open-a-new-account-for-existing-customer",
-        "keyword": "Scenario Outline",
-        "line": 18,
-        "name": "Open a new account for existing customer",
+        "id": "create-a-new-customer-at-xyz-bank;verify-screen-of-customer-creation",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify screen of customer creation",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 319304685
+              "duration": 524604623
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 13,
+            "line": 8,
             "name": "user navigate to login page",
             "match": {
               "location": "src/test/steps/make.deposit.step.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 1271992412
+              "duration": 1027430650
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 14,
-            "name": "open a new account in \"Dollar\" for existing customer",
+            "line": 9,
+            "name": "user create a customer",
             "match": {
-              "location": "src/test/steps/open.account.step.ts:17"
+              "location": "src/test/steps/create.customer.step.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 1659306735
+              "duration": 1587142033
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 15,
-            "name": "new account added for the existing customer successfully",
+            "line": 10,
+            "name": "visual comparison check user interface changes successfully",
             "match": {
-              "location": "src/test/steps/open.account.step.ts:35"
+              "location": "src/test/steps/create.customer.step.ts:64"
             },
             "result": {
-              "status": "passed",
-              "duration": 213595
+              "status": "failed",
+              "duration": 116437266,
+              "error_message": "Error: toMatchSnapshot() must be called during the test\n    at Object.toMatchSnapshot (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/node_modules/playwright/lib/matchers/toMatchSnapshot.js:228:24)\n    at /Users/narayananp24/Documents/repositories/playwrightBoilerplate/node_modules/playwright/lib/common/expectBundleImpl.js:338:953\n    at Object.i [as toMatchSnapshot] (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/node_modules/playwright/lib/common/expectBundleImpl.js:338:968)\n    at Proxy.<anonymous> (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/node_modules/playwright/lib/matchers/expect.js:173:37)\n    at World.<anonymous> (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/src/test/steps/create.customer.step.ts:69:36)\n    at fulfilled (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/src/test/steps/create.customer.step.ts:5:58)"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "passed",
-              "duration": 61774612
+              "status": "failed",
+              "duration": 22591708,
+              "error_message": "page.screenshot: Target closed\n=========================== logs ===========================\ntaking page screenshot\n============================================================\n    at World.<anonymous> (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/src/test/steps/create.customer.step.ts:69:22)\n    at fulfilled (/Users/narayananp24/Documents/repositories/playwrightBoilerplate/src/test/steps/create.customer.step.ts:5:58)"
             }
           }
         ],
         "tags": [
           {
-            "name": "@openaccount",
-            "line": 11
-          },
-          {
-            "name": "@test",
-            "line": 11
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "open-an-account-at-xyz-bank;open-a-new-account-for-existing-customer",
-        "keyword": "Scenario Outline",
-        "line": 19,
-        "name": "Open a new account for existing customer",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 362465698
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 13,
-            "name": "user navigate to login page",
-            "match": {
-              "location": "src/test/steps/make.deposit.step.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1069517141
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "open a new account in \"Pound\" for existing customer",
-            "match": {
-              "location": "src/test/steps/open.account.step.ts:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2012296382
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "new account added for the existing customer successfully",
-            "match": {
-              "location": "src/test/steps/open.account.step.ts:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 697271
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 74181917
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@openaccount",
-            "line": 11
-          },
-          {
-            "name": "@test",
-            "line": 11
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "open-an-account-at-xyz-bank;open-a-new-account-for-existing-customer",
-        "keyword": "Scenario Outline",
-        "line": 20,
-        "name": "Open a new account for existing customer",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 352247002
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 13,
-            "name": "user navigate to login page",
-            "match": {
-              "location": "src/test/steps/make.deposit.step.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1292139767
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "open a new account in \"Rupee\" for existing customer",
-            "match": {
-              "location": "src/test/steps/open.account.step.ts:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1629029993
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "new account added for the existing customer successfully",
-            "match": {
-              "location": "src/test/steps/open.account.step.ts:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 97529
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 60082434
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@openaccount",
-            "line": 11
-          },
-          {
-            "name": "@test",
-            "line": 11
+            "name": "@visualtest",
+            "line": 6
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "open-an-account-at-xyz-bank",
+    "id": "create-a-new-customer-at-xyz-bank",
     "line": 1,
     "keyword": "Feature",
-    "name": "Open an account at XYZ Bank",
+    "name": "Create a new customer at XYZ Bank",
     "tags": [],
-    "uri": "src/test/features/open.account.feature"
+    "uri": "src/test/features/visual.regression.feature"
   }
 ]
